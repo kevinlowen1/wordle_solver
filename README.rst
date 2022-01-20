@@ -1,4 +1,5 @@
-NASA APOD Reddit
+wordle_solver
 ========================
 
-scripts to make a daily upload to a subreddit with details from the NASA APOD 
+wordlist taken from below, reference there for copyright or sub your own word list in: 
+https://github.com/dwyl/english-words

@@ -1,4 +1,4 @@
-# from downloader import nasa_apod_downloader
+from wordlist import load_words
 
 if __name__ == "__main__":
-   print("Hello World")
+   fiveLetterWords = load_words()
