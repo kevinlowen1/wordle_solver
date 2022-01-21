@@ -1,6 +1,16 @@
-import pandas as df
+def regexTester(newWordList, wordAttempt, tentativenums, successNumbers):
+    tentativeLetters = ''
 
-def regexTester(newWordList, wordAttempt, tentativeLetters, tentativenums, successNumbers):
+    #create string for successful or semi-successful letters
+    for number in successNumbers:
+        #what is the letter at the number specified bby the user
+        letterToCheck = wordAttempt[int(number)-1]
+        tentativeLetters = tentativeLetters + letterToCheck
+    for number in tentativenums:
+        #what is the letter at the number specified bby the user
+        letterToCheck = wordAttempt[int(number)-1]
+        tentativeLetters = tentativeLetters + letterToCheck
+
     #rremove worrds without valid letters
     for letter in tentativeLetters:
         # create column for whether the word contains the necessary letters and filter the wordlist
@@ -50,5 +60,7 @@ def regexTester(newWordList, wordAttempt, tentativeLetters, tentativenums, succe
         #check against dataframe for validity
         newWordList = newWordList[newWordList.stillValid != True]
 
-
     return(newWordList)
+
+if __name__ == '__main__':
+    print("Hello world")
