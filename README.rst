@@ -13,7 +13,9 @@ Then the user will recommend a restricted list of words.
 
 If i felt like it this could be improved by looking at the available wordlist and recommending words that would restrict the list the most when they are proven wrong.
 For example, if we know 3 letters, but there are >100 words left as possible, don't try and guess the correct word.  
-Instead guess a word that would restrict the possible words the most by finding new letters and removing impossible letters.
+Instead guess a word that would restrict the possible words the most by finding new letters and removing impossible letters (so don't repeat letters until under 100 possible words).
+
+As is the program works fine, but usually not until the fourth or fifth try will you get it right, by implementing the above you would get a smaller possible list after your second turn.
 
 
 wordlist taken from below, reference there for copyright or sub your own word list in: 
